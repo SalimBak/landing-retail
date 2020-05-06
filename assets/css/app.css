@@ -58,7 +58,7 @@ ul li {
 }
 
 p {
-  color: #929292;
+  color: #636669;
   font-weight: 400;
   margin-bottom: 0;
 }
@@ -502,7 +502,7 @@ body.boxed .main-wrapper {
 /*============ 2.1 PRELOADER =============*/
 .smooth-loader-wrapper {
   background: #f76240;
-  background: linear-gradient(45deg, #f76240, #ffaf00);
+  background: linear-gradient(45deg, #003570, #0379FB);
   position: fixed;
   top: 0;
   left: 0;
