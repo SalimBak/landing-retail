@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166208601-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-166208601-1');
+</script>
+
 	<title>Contact form</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,8 +38,6 @@
 <!--===============================================================================================-->
 </head>
 <body>
-
-
 	<div class="container-contact100">
 		<div class="wrap-contact100">
 			<form method="post" action="http://137.74.196.73:8082/contact" class="contact100-form validate-form">
@@ -39,93 +47,83 @@
 				<span class="contact100-form-title-2 text-center" style="margin-top: -15px">
 					Bénéficiez d'une utilisation gratuite pendant 3 mois 
 					de la version finale en devenant Bêta testeur.
-			
 				</span>
-
 				<label class="label-input100" for="first-name">Quel est votre nom? *</label>
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-					<input id="first-name" class="input100" type="text" name="Nom" placeholder="Prénom">
+					<input id="first-name" class="input100" type="text" name="firstname" placeholder="Prénom">
 					<span class="focus-input100"></span>
 				</div>
 				<div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
-					<input class="input100" type="text" name="last-name" placeholder="Nom">
+					<input class="input100" type="text" name="lastname" placeholder="Nom">
 					<span class="focus-input100"></span>
 				</div>
-
-				<label class="label-input100" for="first-name">Le nom de votre entreprise *</label>
+				<label class="label-input100" for="first-name">Le nom de votre entreprise*</label>
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-					<input id="first-name" class="input100" type="text" name="Nom" placeholder="ex: iloomi">
+					<input id="first-name" class="input100" type="text" name="companyName" placeholder="ex: iloomi">
 					<span class="focus-input100"></span>
 				</div>
-
-				<label class="label-input100" for="email">Entre votre e-mail *</label>
-				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<input id="email" class="input100" type="text" name="email" placeholder="ex: exemple@email.com">
+				<label class="label-input100" for="email">Entre votre e-mail*</label>
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz(s’ouvre dans un nouvel onglet)">
+					<input id="email" class="input100" type="text" name="email" placeholder="ex: exemple@email.com(s’ouvre dans un nouvel onglet)">
 					<span class="focus-input100"></span>
 				</div>
-
 				<label class="label-input100" for="phone">Entre votre téléphone</label>
 				<div class="wrap-input100">
 					<input id="phone" class="input100" type="text" name="phone" placeholder="ex: 0700000014">
 					<span class="focus-input100"></span>
 				</div>
-
-				<label class="label-input100" for="message">Décrivez-nous en quelques mots votre activité *</label>
+				<label class="label-input100" for="message">Décrivez-nous en quelques mots votre activité*</label>
 				<div class="wrap-input100 validate-input" data-validate = "Message is required">
 					<textarea id="message" class="input100" name="message" placeholder="Ecrire votre message"></textarea>
 					<span class="focus-input100"></span>
 				</div>
-
+				<div class="text-error my-2" style="color:red; display:none;">
+					Oups un problème est survenue. Contactez nous au 07 83 83 86 14.
+				</div>
+				<div class="text-success my-2" style="display: none;">
+					Merci, nous vous contacterons très prochainement pour la participation à la bêta.
+				</div>
 				<div class="container-contact100-form-btn">
 					<button class="contact100-form-btn">
 						Participer
 					</button>
 				</div>
 			</form>
-
 			<div class="contact100-more flex-col-c-m" style="background-image: url('images/bg-01.jpg');">
 				<div class="flex-w size1 p-b-47">
 					<div class="txt1 p-r-25">
 						<span class="lnr lnr-map-marker"></span>
 					</div>
-
 					<div class="flex-col size2">
 						<span class="txt1 p-b-20">
 							Notre adresse
 						</span>
-
 						<span class="txt2">
 							87 Rue du Fontenoy, 59100 Roubaix
 						</span>
 					</div>
 				</div>
-
 				<div class="dis-flex size1 p-b-47">
 					<div class="txt1 p-r-25">
 						<span class="lnr lnr-phone-handset"></span>
 					</div>
-
 					<div class="flex-col size2">
 						<span class="txt1 p-b-20">
 							Contactez-nous
 						</span>
-
 						<span class="txt3">
 							07 83 83 86 14
 						</span>
 					</div>
 				</div>
-
 				<div class="dis-flex size1 p-b-47">
 					<div class="txt1 p-r-25">
 						<span class="lnr lnr-envelope"></span>
 					</div>
-
 					<div class="flex-col size2">
 						<span class="txt1 p-b-20">
 							Par mail
 						</span>
-
 						<span class="txt3">
 							contact@iloomi.fr
 						</span>
@@ -134,11 +132,7 @@
 			</div>
 		</div>
 	</div>
-
-
-
 	<div id="dropDownSelect1"></div>
-
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
@@ -167,8 +161,8 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'UA-23581568-13');
 	</script>
+	
 </body>
 </html>
